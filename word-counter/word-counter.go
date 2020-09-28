@@ -39,7 +39,7 @@ func getFirst10Pairs(pl *PairList) int {
 
 //CalcWordFreq returns 10 most frequent words in the given text
 func CalcWordFreq(text string) PairList {
-	split := strings.Split(text, " ")
+	split := strings.Fields(text)
 	var dict = make(map[string]int)
 	for _, v := range split {
 		dict[v]++
