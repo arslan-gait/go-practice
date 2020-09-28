@@ -5,11 +5,13 @@ import (
 	"strings"
 )
 
+//Pair is a key-value struct
 type Pair struct {
 	Key   string
 	Value int
 }
 
+//PairList is an alias for []Pair
 type PairList []Pair
 
 func (p PairList) Len() int           { return len(p) }
